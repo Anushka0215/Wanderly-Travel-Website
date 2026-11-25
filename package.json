@@ -1,0 +1,23 @@
+{
+  "name": "wanderly-ai",
+  "version": "2.0.0",
+  "description": "Wanderly AI — Curated travel platform with Gemini AI concierge, smart budget planner, personalised itinerary generator, and favourite destinations.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "keywords": [
+    "travel",
+    "ai",
+    "gemini",
+    "nodejs",
+    "itinerary",
+    "budget-planner"
+  ],
+  "license": "MIT"
+}

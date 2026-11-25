@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Wanderly — Curated boutique travel experiences across Manali, Goa, Kashmir, and Jaipur. Plan your bespoke journey with effortless booking and local expertise." />
+  <title>Wanderly | Curated Travel Experiences</title>
+
+  <!-- Editorial & Modern Typography with clean system fallbacks -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Skip Link for Accessibility -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Header & Modern Navbar -->
+  <header class="site-header" id="site-header">
+    <nav class="navbar container" aria-label="Primary Navigation">
+      <a href="#home" class="brand" aria-label="Wanderly Home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="18" cy="18" r="16.5" stroke="currentColor" stroke-width="2" />
+            <path d="M18 6L21.5 14.5L30 18L21.5 21.5L18 30L14.5 21.5L6 18L14.5 14.5L18 6Z" fill="currentColor" opacity="0.18" />
+            <path d="M23.5 12.5L19.8 19.8L12.5 23.5L16.2 16.2L23.5 12.5Z" fill="currentColor" />
+            <circle cx="18" cy="18" r="1.8" fill="#FAF7F2" />
+          </svg>
+        </span>
+        <span class="brand-text">Wanderly</span>
+      </a>
+
+      <button
+        type="button"
+        class="nav-toggle"
+        id="nav-toggle"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        aria-controls="nav-menu"
+      >
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#destinations" class="nav-link">Destinations</a></li>
+          <li><a href="#ai-assistant" class="nav-link">AI Assistant</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#booking" class="nav-link">Book Trip</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="#booking" class="btn btn-primary btn-nav">Plan Your Journey</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section with Travel Background -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true">
+        <!-- Layered Scenic Travel Landscape SVG Background -->
+        <svg class="hero-scene" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="heroSky" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#0F291E" />
+              <stop offset="45%" stop-color="#1B4332" />
+              <stop offset="80%" stop-color="#2D6A4F" />
+              <stop offset="100%" stop-color="#40916C" />
+            </linearGradient>
+            <radialGradient id="heroGlow" cx="72%" cy="28%" r="48%">
+              <stop offset="0%" stop-color="#F7E7CE" stop-opacity="0.48" />
+              <stop offset="50%" stop-color="#D8C39E" stop-opacity="0.16" />
+              <stop offset="100%" stop-color="#1B4332" stop-opacity="0" />
+            </radialGradient>
+            <linearGradient id="mistLayer" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#FAF7F2" stop-opacity="0" />
+              <stop offset="100%" stop-color="#FAF7F2" stop-opacity="0.22" />
+            </linearGradient>
+          </defs>
+          <rect width="1440" height="900" fill="url(#heroSky)" />
+          <rect width="1440" height="900" fill="url(#heroGlow)" />
+          <!-- Sun / Moon Orb -->
+          <circle cx="1040" cy="240" r="88" fill="#FAF7F2" opacity="0.14" />
+          <circle cx="1040" cy="240" r="56" fill="#FAF7F2" opacity="0.24" />
+          <!-- Distant Mountain Range -->
+          <path d="M0 560 L190 410 L360 495 L570 330 L780 460 L980 340 L1180 450 L1340 375 L1440 430 L1440 900 L0 900 Z" fill="#173A2B" opacity="0.65" />
+          <!-- Mid Mountain Range -->
+          <path d="M0 640 L140 520 L310 595 L490 455 L690 570 L890 440 L1100 565 L1290 480 L1440 550 L1440 900 L0 900 Z" fill="#133124" opacity="0.82" />
+          <!-- Atmospheric Valley Mist -->
+          <rect y="510" width="1440" height="190" fill="url(#mistLayer)" />
+          <!-- Foreground Ridges & Pines -->
+          <path d="M0 720 Q280 630 560 710 T1120 695 T1440 730 L1440 900 L0 900 Z" fill="#0D241A" />
+          <path d="M0 785 Q360 730 720 790 T1440 770 L1440 900 L0 900 Z" fill="#081A12" />
+          <!-- Stylized Pine Silhouettes -->
+          <g fill="#081A12" opacity="0.9">
+            <polygon points="90,785 110,705 130,785" />
+            <polygon points="135,795 162,685 189,795" />
+            <polygon points="185,805 208,718 231,805" />
+            <polygon points="1180,795 1208,690 1236,795" />
+            <polygon points="1245,800 1278,670 1311,800" />
+            <polygon points="1315,795 1340,705 1365,795" />
+          </g>
+          <!-- Winding River / Trail Highlight -->
+          <path d="M740 900 C780 820, 620 780, 690 715 C740 668, 860 650, 825 600" stroke="#FAF7F2" stroke-opacity="0.18" stroke-width="6" fill="none" stroke-linecap="round" />
+        </svg>
+        <div class="hero-scrim"></div>
+      </div>
+
+      <div class="container hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot" aria-hidden="true"></span>
+          Curated Journeys Across India
+        </div>
+        <h1 id="hero-title" class="hero-title">
+          Discover Slow, Soulful
+          <span class="hero-title-accent">Travel Experiences</span>
+        </h1>
+        <p class="hero-subtitle">
+          From mist-draped Himalayan valleys in Manali and serene houseboats in Kashmir to sun-soaked shores in Goa and royal courtyards in Jaipur — Wanderly crafts journeys built around wonder.
+        </p>
+
+        <div class="hero-actions">
+          <button type="button" class="btn btn-cream btn-lg" id="explore-btn">
+            Explore Destinations
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 5v14M19 12l-7 7-7-7" />
+            </svg>
+          </button>
+          <a href="#booking" class="btn btn-outline-light btn-lg">Book Custom Trip</a>
+        </div>
+
+        <div class="hero-stats" aria-label="Wanderly Highlights">
+          <div class="stat-item">
+            <span class="stat-value">4</span>
+            <span class="stat-label">Signature Regions</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-item">
+            <span class="stat-value">100%</span>
+            <span class="stat-label">Tailored Itineraries</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-item">
+            <span class="stat-value">4.9/5</span>
+            <span class="stat-label">Traveler Rating</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section class="section destinations-section" id="destinations" aria-labelledby="destinations-heading">
+      <div class="container">
+        <div class="section-header-row">
+          <div class="section-header">
+            <span class="section-eyebrow">Handpicked Escapes</span>
+            <h2 id="destinations-heading" class="section-title">Signature Destinations</h2>
+            <p class="section-description">
+              Four iconic landscapes, thoughtfully paced with boutique stays, local guides, and seamless transfers.
+            </p>
+          </div>
+
+          <!-- Interactive Category Filter -->
+          <div class="filter-group" role="group" aria-label="Filter destinations by vibe">
+            <button type="button" class="filter-btn active" data-filter="all">All</button>
+            <button type="button" class="filter-btn" data-filter="mountains">Mountains</button>
+            <button type="button" class="filter-btn" data-filter="coastal">Coastal</button>
+            <button type="button" class="filter-btn" data-filter="heritage">Heritage</button>
+          </div>
+        </div>
+
+        <div class="destinations-grid" id="destinations-grid">
+          <!-- Card 1: Manali -->
+          <article class="destination-card" data-category="mountains" data-destination="Manali">
+            <div class="card-media">
+              <svg class="card-illustration" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Scenic illustration of Manali snow peaks and pine valleys">
+                <defs>
+                  <linearGradient id="manaliSky" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#1B4332" />
+                    <stop offset="65%" stop-color="#3E7C59" />
+                    <stop offset="100%" stop-color="#E9E4D8" />
+                  </linearGradient>
+                </defs>
+                <rect width="600" height="400" fill="url(#manaliSky)" />
+                <circle cx="480" cy="95" r="36" fill="#FAF7F2" opacity="0.85" />
+                <path d="M0 280 L120 130 L235 235 L360 95 L495 220 L600 140 L600 400 L0 400 Z" fill="#234F3B" />
+                <!-- Snow Caps -->
+                <path d="M120 130 L165 182 L135 175 L120 190 L98 172 L75 185 Z" fill="#FAF7F2" />
+                <path d="M360 95 L418 162 L385 152 L362 174 L335 150 L306 168 Z" fill="#FAF7F2" />
+                <path d="M0 320 Q180 265 360 315 T600 290 L600 400 L0 400 Z" fill="#143326" />
+                <!-- Pine Trees -->
+                <g fill="#0C2118">
+                  <polygon points="45,355 65,280 85,355" />
+                  <polygon points="88,365 112,265 136,365" />
+                  <polygon points="465,365 492,265 519,365" />
+                  <polygon points="520,355 542,285 564,355" />
+                </g>
+                <!-- Beas River Ribbon -->
+                <path d="M240 400 C270 350, 340 340, 310 295" stroke="#FAF7F2" stroke-opacity="0.45" stroke-width="10" fill="none" stroke-linecap="round" />
+              </svg>
+              <span class="card-badge">Himachal Pradesh</span>
+              <span class="card-duration">5 Days / 4 Nights</span>
+            </div>
+            <div class="card-body">
+              <div class="card-top-row">
+                <div>
+                  <h3 class="card-title">Manali</h3>
+                  <p class="card-tagline">Pine Forests &amp; Himalayan Passes</p>
+                </div>
+                <div class="card-rating" aria-label="Rated 4.9 out of 5">
+                  <span aria-hidden="true">★</span> 4.9
+                </div>
+              </div>
+              <p class="card-copy">
+                Wake up to cedar-scented mountain air, wooden boutique cottages above the Beas river, and crisp high-altitude drives through Solang and Atal Tunnel.
+              </p>
+              <ul class="card-highlights">
+                <li>Solang Valley</li>
+                <li>Old Manali</li>
+                <li>Rohtang &amp; Sissu</li>
+              </ul>
+              <div class="card-footer">
+                <div class="card-price">
+                  <span class="price-label">Starting from</span>
+                  <span class="price-amount">₹18,500</span>
+                  <span class="price-unit">/ guest</span>
+                </div>
+                <div class="card-actions">
+                  <button type="button" class="btn btn-secondary btn-sm view-itinerary-btn" data-destination="Manali">
+                    Itinerary
+                  </button>
+                  <button type="button" class="btn btn-primary btn-sm book-dest-btn" data-destination="Manali">
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Goa -->
+          <article class="destination-card" data-category="coastal" data-destination="Goa">
+            <div class="card-media">
+              <svg class="card-illustration" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Scenic illustration of Goa golden sunset palms and Arabian sea">
+                <defs>
+                  <linearGradient id="goaSky" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#2D6A4F" />
+                    <stop offset="50%" stop-color="#D4A373" />
+                    <stop offset="100%" stop-color="#F6E6CE" />
+                  </linearGradient>
+                  <linearGradient id="goaSea" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#1B4332" />
+                    <stop offset="100%" stop-color="#2D6A4F" />
+                  </linearGradient>
+                </defs>
+                <rect width="600" height="400" fill="url(#goaSky)" />
+                <circle cx="300" cy="215" r="54" fill="#FAF7F2" opacity="0.82" />
+                <rect y="235" width="600" height="165" fill="url(#goaSea)" />
+                <!-- Sun Reflection -->
+                <ellipse cx="300" cy="260" rx="58" ry="8" fill="#FAF7F2" opacity="0.35" />
+                <ellipse cx="300" cy="285" rx="40" ry="6" fill="#FAF7F2" opacity="0.28" />
+                <ellipse cx="300" cy="310" rx="22" ry="4" fill="#FAF7F2" opacity="0.22" />
+                <!-- Shoreline Curve -->
+                <path d="M0 325 Q220 295 440 345 T600 330 L600 400 L0 400 Z" fill="#EDE0CE" />
+                <!-- Palm Tree Silhouettes -->
+                <path d="M85 370 Q105 260 135 180" stroke="#133124" stroke-width="10" fill="none" stroke-linecap="round" />
+                <g fill="#133124">
+                  <path d="M135 180 Q95 160 65 185 Q105 180 135 180 Z" />
+                  <path d="M135 180 Q100 135 78 145 Q115 155 135 180 Z" />
+                  <path d="M135 180 Q165 140 198 155 Q162 162 135 180 Z" />
+                  <path d="M135 180 Q180 175 205 205 Q165 188 135 180 Z" />
+                </g>
+                <path d="M510 385 Q495 290 470 215" stroke="#133124" stroke-width="8" fill="none" stroke-linecap="round" />
+                <g fill="#133124">
+                  <path d="M470 215 Q435 198 412 220 Q445 214 470 215 Z" />
+                  <path d="M470 215 Q450 178 430 185 Q456 196 470 215 Z" />
+                  <path d="M470 215 Q505 185 535 202 Q498 205 470 215 Z" />
+                </g>
+              </svg>
+              <span class="card-badge">West Coast</span>
+              <span class="card-duration">4 Days / 3 Nights</span>
+            </div>
+            <div class="card-body">
+              <div class="card-top-row">
+                <div>
+                  <h3 class="card-title">Goa</h3>
+                  <p class="card-tagline">Quiet Coves &amp; Latin Quarters</p>
+                </div>
+                <div class="card-rating" aria-label="Rated 4.8 out of 5">
+                  <span aria-hidden="true">★</span> 4.8
+                </div>
+              </div>
+              <p class="card-copy">
+                Skip the noise for South Goa's palm-lined coves, heritage Portuguese villas in Fontainhas, coastal spice trails, and private sunset sails.
+              </p>
+              <ul class="card-highlights">
+                <li>Palolem &amp; Agonda</li>
+                <li>Fontainhas Walk</li>
+                <li>Sunset Catamaran</li>
+              </ul>
+              <div class="card-footer">
+                <div class="card-price">
+                  <span class="price-label">Starting from</span>
+                  <span class="price-amount">₹16,200</span>
+                  <span class="price-unit">/ guest</span>
+                </div>
+                <div class="card-actions">
+                  <button type="button" class="btn btn-secondary btn-sm view-itinerary-btn" data-destination="Goa">
+                    Itinerary
+                  </button>
+                  <button type="button" class="btn btn-primary btn-sm book-dest-btn" data-destination="Goa">
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Kashmir -->
+          <article class="destination-card" data-category="mountains" data-destination="Kashmir">
+            <div class="card-media">
+              <svg class="card-illustration" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Scenic illustration of Kashmir Dal Lake shikara and snow-clad mountains">
+                <defs>
+                  <linearGradient id="kashmirSky" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#143326" />
+                    <stop offset="55%" stop-color="#52796F" />
+                    <stop offset="100%" stop-color="#FAF7F2" />
+                  </linearGradient>
+                  <linearGradient id="dalLake" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#2D5A47" />
+                    <stop offset="100%" stop-color="#133124" />
+                  </linearGradient>
+                </defs>
+                <rect width="600" height="400" fill="url(#kashmirSky)" />
+                <circle cx="150" cy="105" r="34" fill="#FAF7F2" opacity="0.75" />
+                <!-- Pir Panjal Peaks -->
+                <path d="M0 245 L110 155 L210 215 L335 120 L460 205 L545 145 L600 185 L600 255 L0 255 Z" fill="#234838" />
+                <path d="M335 120 L385 165 L358 160 L335 178 L312 158 L286 168 Z" fill="#FAF7F2" opacity="0.9" />
+                <path d="M110 155 L145 188 L122 182 L110 195 L92 182 L75 190 Z" fill="#FAF7F2" opacity="0.85" />
+                <!-- Dal Lake -->
+                <rect y="250" width="600" height="150" fill="url(#dalLake)" />
+                <!-- Lake Ripples -->
+                <line x1="80" y1="290" x2="210" y2="290" stroke="#FAF7F2" stroke-opacity="0.22" stroke-width="2" />
+                <line x1="360" y1="335" x2="510" y2="335" stroke="#FAF7F2" stroke-opacity="0.22" stroke-width="2" />
+                <!-- Shikara Boat Silhouette -->
+                <path d="M210 315 Q300 338 395 310 L372 332 Q300 344 232 332 Z" fill="#0B1F16" />
+                <path d="M265 317 L272 282 L336 282 L343 317 Z" fill="#FAF7F2" opacity="0.88" />
+                <line x1="265" y1="282" x2="343" y2="282" stroke="#1B4332" stroke-width="4" />
+                <!-- Chinar Foliage Edge -->
+                <circle cx="40" cy="245" r="42" fill="#133124" />
+                <circle cx="565" cy="242" r="48" fill="#133124" />
+              </svg>
+              <span class="card-badge">Jammu &amp; Kashmir</span>
+              <span class="card-duration">6 Days / 5 Nights</span>
+            </div>
+            <div class="card-body">
+              <div class="card-top-row">
+                <div>
+                  <h3 class="card-title">Kashmir</h3>
+                  <p class="card-tagline">Alpine Meadows &amp; Dal Lake</p>
+                </div>
+                <div class="card-rating" aria-label="Rated 5.0 out of 5">
+                  <span aria-hidden="true">★</span> 5.0
+                </div>
+              </div>
+              <p class="card-copy">
+                Drift across misty Dal Lake at dawn in a cedarwood shikara, stroll saffron orchards, and stay in alpine lodges framed by Gulmarg and Pahalgam.
+              </p>
+              <ul class="card-highlights">
+                <li>Srinagar Houseboat</li>
+                <li>Gulmarg Gondola</li>
+                <li>Pahalgam Valley</li>
+              </ul>
+              <div class="card-footer">
+                <div class="card-price">
+                  <span class="price-label">Starting from</span>
+                  <span class="price-amount">₹24,900</span>
+                  <span class="price-unit">/ guest</span>
+                </div>
+                <div class="card-actions">
+                  <button type="button" class="btn btn-secondary btn-sm view-itinerary-btn" data-destination="Kashmir">
+                    Itinerary
+                  </button>
+                  <button type="button" class="btn btn-primary btn-sm book-dest-btn" data-destination="Kashmir">
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Jaipur -->
+          <article class="destination-card" data-category="heritage" data-destination="Jaipur">
+            <div class="card-media">
+              <svg class="card-illustration" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Scenic illustration of Jaipur heritage palace domes and sandstone arches">
+                <defs>
+                  <linearGradient id="jaipurSky" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#1B4332" />
+                    <stop offset="55%" stop-color="#B07D62" />
+                    <stop offset="100%" stop-color="#F5E6D3" />
+                  </linearGradient>
+                </defs>
+                <rect width="600" height="400" fill="url(#jaipurSky)" />
+                <circle cx="465" cy="115" r="44" fill="#FAF7F2" opacity="0.72" />
+                <!-- Aravalli Hills Backdrop -->
+                <path d="M0 290 Q150 225 320 265 T600 245 L600 400 L0 400 Z" fill="#2D5241" opacity="0.55" />
+                <!-- Heritage Palace Silhouette -->
+                <rect x="85" y="210" width="430" height="190" fill="#A45D47" />
+                <rect x="145" y="160" width="310" height="240" fill="#BC6C54" />
+                <!-- Palace Domes (Chhatris) -->
+                <path d="M185 160 Q215 110 245 160 Z" fill="#FAF7F2" opacity="0.92" />
+                <path d="M265 145 Q300 85 335 145 Z" fill="#FAF7F2" opacity="0.95" />
+                <path d="M355 160 Q385 110 415 160 Z" fill="#FAF7F2" opacity="0.92" />
+                <rect x="260" y="145" width="80" height="20" fill="#9E533E" />
+                <!-- Ornate Sandstone Arches -->
+                <path d="M170 400 L170 280 Q210 230 250 280 L250 400 Z" fill="#1B4332" />
+                <path d="M260 400 L260 255 Q300 200 340 255 L340 400 Z" fill="#143326" />
+                <path d="M350 400 L350 280 Q390 230 430 280 L430 400 Z" fill="#1B4332" />
+                <!-- Warm Courtyard Glow -->
+                <path d="M274 400 L274 285 Q300 250 326 285 L326 400 Z" fill="#F5E6D3" opacity="0.32" />
+                <!-- Palm Accents -->
+                <circle cx="52" cy="365" r="55" fill="#143326" />
+                <circle cx="548" cy="365" r="55" fill="#143326" />
+              </svg>
+              <span class="card-badge">Rajasthan</span>
+              <span class="card-duration">4 Days / 3 Nights</span>
+            </div>
+            <div class="card-body">
+              <div class="card-top-row">
+                <div>
+                  <h3 class="card-title">Jaipur</h3>
+                  <p class="card-tagline">Sandstone Palaces &amp; Craft Bazaars</p>
+                </div>
+                <div class="card-rating" aria-label="Rated 4.9 out of 5">
+                  <span aria-hidden="true">★</span> 4.9
+                </div>
+              </div>
+              <p class="card-copy">
+                Step inside centuries-old havelis, climb Amber Fort at sunrise, explore block-print ateliers, and dine under lantern-lit courtyard skies.
+              </p>
+              <ul class="card-highlights">
+                <li>Amber &amp; Nahargarh</li>
+                <li>Hawa Mahal Walk</li>
+                <li>Heritage Haveli Stay</li>
+              </ul>
+              <div class="card-footer">
+                <div class="card-price">
+                  <span class="price-label">Starting from</span>
+                  <span class="price-amount">₹17,400</span>
+                  <span class="price-unit">/ guest</span>
+                </div>
+                <div class="card-actions">
+                  <button type="button" class="btn btn-secondary btn-sm view-itinerary-btn" data-destination="Jaipur">
+                    Itinerary
+                  </button>
+                  <button type="button" class="btn btn-primary btn-sm book-dest-btn" data-destination="Jaipur">
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Wanderly AI Travel Assistant Section -->
+    <section class="section ai-section" id="ai-assistant" aria-labelledby="ai-heading">
+      <div class="container ai-layout">
+        <div class="ai-intro">
+          <span class="section-eyebrow">Powered by Google Gemini</span>
+          <h2 id="ai-heading" class="section-title">Wanderly AI Travel Assistant</h2>
+          <p class="section-description">
+            Chat with our real AI travel concierge for tailored routes, honest budget trade-offs, seasonal tips, and side-by-side destination comparisons.
+          </p>
+
+          <div class="ai-status-pill" id="ai-status-pill" role="status" aria-live="polite">
+            <span class="ai-status-dot" aria-hidden="true"></span>
+            <span id="ai-status-text">Checking AI connection...</span>
+          </div>
+
+          <div class="ai-prompts-block">
+            <h3 class="ai-prompts-heading">Try a suggested prompt</h3>
+            <div class="ai-prompt-chips" role="group" aria-label="Suggested travel prompts">
+              <button type="button" class="ai-prompt-chip" data-prompt="Plan a 3-day Manali trip.">
+                Plan a 3-day Manali trip.
+              </button>
+              <button type="button" class="ai-prompt-chip" data-prompt="Goa trip under Rs. 15000.">
+                Goa trip under Rs. 15000.
+              </button>
+              <button type="button" class="ai-prompt-chip" data-prompt="Compare Kashmir and Manali.">
+                Compare Kashmir and Manali.
+              </button>
+              <button type="button" class="ai-prompt-chip" data-prompt="Best destinations for couples.">
+                Best destinations for couples.
+              </button>
+            </div>
+          </div>
+
+          <div class="ai-helper-note">
+            <strong>Session memory enabled:</strong> Follow-up questions remember your earlier preferences during this visit.
+          </div>
+        </div>
+
+        <div class="ai-chat-card" aria-label="Wanderly AI Chat">
+          <div class="ai-chat-header">
+            <div class="ai-chat-identity">
+              <div class="ai-avatar" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 3l1.9 4.6L18.5 9.5l-4.6 1.9L12 16l-1.9-4.6L5.5 9.5l4.6-1.9L12 3z" />
+                  <path d="M19 15l.9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9L19 15z" />
+                </svg>
+              </div>
+              <div>
+                <h3>Wanderly Concierge</h3>
+                <span id="ai-model-label">Gemini Travel Specialist</span>
+              </div>
+            </div>
+            <button type="button" class="ai-clear-btn" id="ai-clear-btn" aria-label="Clear chat history">
+              Clear Chat
+            </button>
+          </div>
+
+          <div class="ai-error-banner" id="ai-error-banner" hidden role="alert">
+            <span class="ai-error-title" id="ai-error-title">AI Assistant Unavailable</span>
+            <p id="ai-error-message"></p>
+          </div>
+
+          <div class="ai-chat-messages" id="ai-chat-messages" role="log" aria-live="polite" aria-label="Chat messages">
+            <!-- Messages populated by script.js -->
+          </div>
+
+          <div class="ai-typing-row" id="ai-typing-indicator" hidden aria-live="polite">
+            <div class="ai-bubble ai-bubble-model ai-bubble-loading">
+              <span class="typing-dots" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </span>
+              <span class="typing-label">Wanderly AI is crafting your answer...</span>
+            </div>
+          </div>
+
+          <form class="ai-chat-composer" id="ai-chat-form" novalidate>
+            <label for="ai-chat-input" class="sr-only">Ask Wanderly AI a travel question</label>
+            <textarea
+              id="ai-chat-input"
+              rows="1"
+              maxlength="2000"
+              placeholder="Ask about itineraries, weather, stays, or budgets..."
+              required
+            ></textarea>
+            <button type="submit" class="btn btn-primary ai-send-btn" id="ai-send-btn" aria-label="Send message">
+              <span>Send</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about" aria-labelledby="about-heading">
+      <div class="container about-grid">
+        <div class="about-visual">
+          <div class="about-card-primary">
+            <span class="about-quote-mark" aria-hidden="true">“</span>
+            <p class="about-quote">
+              We believe great travel shouldn't feel rushed. Every Wanderly route is shaped by local storytellers, unhurried mornings, and stays that honor the landscape.
+            </p>
+            <div class="about-author">
+              <div class="author-avatar" aria-hidden="true">W</div>
+              <div>
+                <strong>Aarav &amp; Meera Kulkarni</strong>
+                <span>Co-Founders, Wanderly Curated Travel</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-metrics-row">
+            <div class="metric-tile">
+              <span class="metric-num">12,400+</span>
+              <span class="metric-desc">Happy travelers hosted</span>
+            </div>
+            <div class="metric-tile">
+              <span class="metric-num">38+</span>
+              <span class="metric-desc">Vetted boutique stays</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <span class="section-eyebrow">Why Travel With Wanderly</span>
+          <h2 id="about-heading" class="section-title">Crafted Around Calm, Culture &amp; Care</h2>
+          <p class="about-lead">
+            Founded in 2021, Wanderly partners directly with family-run mountain lodges, coastal eco-villas, and heritage havelis across India so your trip supports local communities while feeling effortless from landing to return.
+          </p>
+
+          <div class="pillars-grid">
+            <div class="pillar-item">
+              <div class="pillar-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                  <path d="m9 12 2 2 4-4" />
+                </svg>
+              </div>
+              <div>
+                <h3>Verified Boutique Stays</h3>
+                <p>Every property is personally audited for comfort, warmth, and local architecture.</p>
+              </div>
+            </div>
+
+            <div class="pillar-item">
+              <div class="pillar-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" />
+                </svg>
+              </div>
+              <div>
+                <h3>Local Concierge Support</h3>
+                <p>Dedicated on-ground trip hosts available 24/7 via phone and WhatsApp.</p>
+              </div>
+            </div>
+
+            <div class="pillar-item">
+              <div class="pillar-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
+                  <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
+                </svg>
+              </div>
+              <div>
+                <h3>Earth-Conscious Routes</h3>
+                <p>Plastic-free stays, carbon-balanced transfers, and small-group footprints.</p>
+              </div>
+            </div>
+
+            <div class="pillar-item">
+              <div class="pillar-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                  <line x1="16" y1="2" x2="16" y2="6" />
+                  <line x1="8" y1="2" x2="8" y2="6" />
+                  <line x1="3" y1="10" x2="21" y2="10" />
+                </svg>
+              </div>
+              <div>
+                <h3>Flexible Rescheduling</h3>
+                <p>Free date changes up to 7 days prior to departure with transparent pricing.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#booking" class="btn btn-primary">Reserve Your Dates</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Section with Live Summary & Validation -->
+    <section class="section booking-section" id="booking" aria-labelledby="booking-heading">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="section-eyebrow">Effortless Planning</span>
+          <h2 id="booking-heading" class="section-title">Book Your Wanderly Journey</h2>
+          <p class="section-description">
+            Choose your destination, dates, and travel tier. Our concierge confirms availability within minutes.
+          </p>
+        </div>
+
+        <div class="booking-layout">
+          <!-- Live Estimate & Trip Summary Panel -->
+          <aside class="booking-summary-card" aria-label="Trip Estimate Summary">
+            <div class="summary-header">
+              <span class="summary-kicker">Live Trip Estimate</span>
+              <h3 id="summary-dest-name">Select a Destination</h3>
+              <p id="summary-dest-meta">Choose from Manali, Goa, Kashmir, or Jaipur to preview your itinerary pricing.</p>
+            </div>
+
+            <div class="summary-breakdown">
+              <div class="summary-row">
+                <span>Duration</span>
+                <strong id="summary-duration">—</strong>
+              </div>
+              <div class="summary-row">
+                <span>Base Rate / Guest</span>
+                <strong id="summary-base-rate">—</strong>
+              </div>
+              <div class="summary-row">
+                <span>Travel Tier</span>
+                <strong id="summary-tier">Classic Comfort</strong>
+              </div>
+              <div class="summary-row">
+                <span>Travelers</span>
+                <strong id="summary-guests">2 Guests</strong>
+              </div>
+              <div class="summary-row">
+                <span>Taxes &amp; Concierge (5%)</span>
+                <strong id="summary-taxes">—</strong>
+              </div>
+            </div>
+
+            <div class="summary-total-box">
+              <span>Estimated Total</span>
+              <strong id="summary-total">₹0</strong>
+            </div>
+
+            <ul class="summary-inclusions">
+              <li>Handpicked boutique accommodation &amp; daily breakfast</li>
+              <li>Private airport/station pickup &amp; local transfers</li>
+              <li>Curated local experiences &amp; 24/7 trip assistance</li>
+            </ul>
+          </aside>
+
+          <!-- Booking Form & Confirmation Container -->
+          <div class="booking-form-wrapper">
+            <form id="booking-form" class="booking-form" novalidate>
+              <div class="form-grid">
+                <div class="form-field">
+                  <label for="full-name">Full Name <span class="req">*</span></label>
+                  <input
+                    type="text"
+                    id="full-name"
+                    name="fullName"
+                    placeholder="e.g. Ananya Sharma"
+                    autocomplete="name"
+                    required
+                  />
+                  <span class="field-error" id="error-full-name" role="alert"></span>
+                </div>
+
+                <div class="form-field">
+                  <label for="email">Email Address <span class="req">*</span></label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="you@example.com"
+                    autocomplete="email"
+                    required
+                  />
+                  <span class="field-error" id="error-email" role="alert"></span>
+                </div>
+
+                <div class="form-field">
+                  <label for="phone">Phone Number <span class="req">*</span></label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="+91 98765 43210"
+                    autocomplete="tel"
+                    required
+                  />
+                  <span class="field-error" id="error-phone" role="alert"></span>
+                </div>
+
+                <div class="form-field">
+                  <label for="destination">Destination <span class="req">*</span></label>
+                  <select id="destination" name="destination" required>
+                    <option value="">Choose a destination...</option>
+                    <option value="Manali">Manali — Himachal Pradesh (5D/4N)</option>
+                    <option value="Goa">Goa — West Coast (4D/3N)</option>
+                    <option value="Kashmir">Kashmir — Srinagar &amp; Gulmarg (6D/5N)</option>
+                    <option value="Jaipur">Jaipur — Rajasthan Heritage (4D/3N)</option>
+                  </select>
+                  <span class="field-error" id="error-destination" role="alert"></span>
+                </div>
+
+                <div class="form-field">
+                  <label for="travel-date">Preferred Departure Date <span class="req">*</span></label>
+                  <input type="date" id="travel-date" name="travelDate" required />
+                  <span class="field-error" id="error-travel-date" role="alert"></span>
+                </div>
+
+                <div class="form-field">
+                  <label for="travelers">Number of Travelers <span class="req">*</span></label>
+                  <input
+                    type="number"
+                    id="travelers"
+                    name="travelers"
+                    min="1"
+                    max="10"
+                    value="2"
+                    required
+                  />
+                  <span class="field-error" id="error-travelers" role="alert"></span>
+                </div>
+
+                <div class="form-field form-field-full">
+                  <label for="package-tier">Experience Tier</label>
+                  <select id="package-tier" name="packageTier">
+                    <option value="classic">Classic Comfort (Included)</option>
+                    <option value="boutique">Boutique Luxury (+35%)</option>
+                    <option value="adventure">Private Curated Expedition (+55%)</option>
+                  </select>
+                </div>
+
+                <div class="form-field form-field-full">
+                  <label for="notes">Special Requests <span class="optional">(Optional)</span></label>
+                  <textarea
+                    id="notes"
+                    name="notes"
+                    rows="3"
+                    maxlength="300"
+                    placeholder="Dietary preferences, anniversary surprise, flexible dates, or room requests..."
+                  ></textarea>
+                  <div class="field-hint-row">
+                    <span>Tailor-made preferences welcome</span>
+                    <span id="notes-counter">0 / 300</span>
+                  </div>
+                </div>
+
+                <div class="form-field form-field-full">
+                  <label class="checkbox-label">
+                    <input type="checkbox" id="terms-consent" name="termsConsent" required />
+                    <span>I confirm my travel details are accurate and agree to Wanderly's flexible booking terms.</span>
+                  </label>
+                  <span class="field-error" id="error-terms-consent" role="alert"></span>
+                </div>
+              </div>
+
+              <div class="form-submit-row">
+                <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit-booking-btn">
+                  Confirm Booking Request
+                </button>
+              </div>
+            </form>
+
+            <!-- Booking Confirmation Message (Hidden Until Valid Submit) -->
+            <div
+              id="booking-confirmation"
+              class="booking-confirmation"
+              hidden
+              role="status"
+              aria-live="polite"
+            >
+              <div class="confirmation-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+              </div>
+              <span class="confirmation-badge">Booking Request Confirmed</span>
+              <h3>We're preparing your <span id="conf-destination">Journey</span>!</h3>
+              <p id="conf-message">
+                Thank you for choosing Wanderly. Your itinerary reference and concierge confirmation have been prepared.
+              </p>
+
+              <div class="confirmation-details" id="conf-details">
+                <!-- Populated dynamically via script.js -->
+              </div>
+
+              <div class="confirmation-actions">
+                <button type="button" class="btn btn-primary" id="new-booking-btn">
+                  Book Another Trip
+                </button>
+                <button type="button" class="btn btn-secondary" id="print-booking-btn">
+                  Print Summary
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact" aria-labelledby="contact-heading">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <span class="section-eyebrow">Get In Touch</span>
+          <h2 id="contact-heading" class="section-title">Speak With a Travel Specialist</h2>
+          <p class="section-description">
+            Have questions about seasonal weather, multi-city routes, or group retreats? Reach out directly and our team will respond within 2 hours.
+          </p>
+
+          <div class="contact-cards">
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <div>
+                <h3>Studio Address</h3>
+                <p>42 Church Street, Shanthala Nagar, Bengaluru 560001</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </div>
+              <div>
+                <h3>Email Us</h3>
+                <div class="contact-link-row">
+                  <a href="mailto:hello@wanderly.travel">hello@wanderly.travel</a>
+                  <button type="button" class="copy-btn" data-copy="hello@wanderly.travel" aria-label="Copy email address">
+                    Copy
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+              </div>
+              <div>
+                <h3>Concierge Desk</h3>
+                <div class="contact-link-row">
+                  <a href="tel:+918041239876">+91 80 4123 9876</a>
+                  <span class="hours-badge">Mon–Sun • 8 AM – 9 PM IST</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-card">
+          <h3>Send a Quick Message</h3>
+          <form id="contact-form" novalidate>
+            <div class="form-field">
+              <label for="contact-name">Your Name <span class="req">*</span></label>
+              <input type="text" id="contact-name" name="contactName" placeholder="Your full name" required />
+              <span class="field-error" id="error-contact-name" role="alert"></span>
+            </div>
+
+            <div class="form-field">
+              <label for="contact-email">Email Address <span class="req">*</span></label>
+              <input type="email" id="contact-email" name="contactEmail" placeholder="you@example.com" required />
+              <span class="field-error" id="error-contact-email" role="alert"></span>
+            </div>
+
+            <div class="form-field">
+              <label for="contact-topic">Topic</label>
+              <select id="contact-topic" name="contactTopic">
+                <option value="Custom Itinerary">Custom Itinerary</option>
+                <option value="Group & Family Retreat">Group &amp; Family Retreat</option>
+                <option value="Existing Booking">Existing Booking Support</option>
+                <option value="Partnership">Boutique Stay Partnership</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="contact-message">Message <span class="req">*</span></label>
+              <textarea id="contact-message" name="contactMessage" rows="4" placeholder="Tell us how we can help plan your trip..." required></textarea>
+              <span class="field-error" id="error-contact-message" role="alert"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+          </form>
+
+          <div id="contact-confirmation" class="contact-confirmation" hidden role="status" aria-live="polite">
+            <strong>Message received!</strong>
+            <p id="contact-confirmation-text">Our travel concierge will reply shortly.</p>
+            <button type="button" class="btn btn-secondary btn-sm" id="reset-contact-btn">Send Another Inquiry</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Professional Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="#home" class="brand brand-footer">
+            <span class="brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="18" cy="18" r="16.5" stroke="currentColor" stroke-width="2" />
+                <path d="M18 6L21.5 14.5L30 18L21.5 21.5L18 30L14.5 21.5L6 18L14.5 14.5L18 6Z" fill="currentColor" opacity="0.2" />
+                <path d="M23.5 12.5L19.8 19.8L12.5 23.5L16.2 16.2L23.5 12.5Z" fill="currentColor" />
+                <circle cx="18" cy="18" r="1.8" fill="#143326" />
+              </svg>
+            </span>
+            <span class="brand-text">Wanderly</span>
+          </a>
+          <p class="footer-tagline">
+            Slow, thoughtful journeys through India's mountains, coastlines, and living heritage.
+          </p>
+          <div class="social-links" aria-label="Social Media">
+            <a href="#contact" class="social-link" aria-label="Follow Wanderly on Instagram" data-toast="Instagram @wanderly.travel">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+            <a href="#contact" class="social-link" aria-label="Connect with Wanderly on X" data-toast="X @wanderlytravel">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4l16 16M20 4L4 20" />
+              </svg>
+            </a>
+            <a href="#contact" class="social-link" aria-label="Watch Wanderly films on YouTube" data-toast="YouTube: Wanderly Journals">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#ai-assistant">AI Assistant</a></li>
+            <li><a href="#about">About Wanderly</a></li>
+            <li><a href="#booking">Book a Trip</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Destinations</h4>
+          <ul>
+            <li><button type="button" class="footer-dest-link" data-destination="Manali">Manali Retreats</button></li>
+            <li><button type="button" class="footer-dest-link" data-destination="Goa">Goa Coastal Stays</button></li>
+            <li><button type="button" class="footer-dest-link" data-destination="Kashmir">Kashmir Houseboats</button></li>
+            <li><button type="button" class="footer-dest-link" data-destination="Jaipur">Jaipur Heritage Havelis</button></li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter-col">
+          <h4>Seasonal Field Notes</h4>
+          <p>Monthly curated guides and early-bird lodge offers — zero spam.</p>
+          <form id="newsletter-form" class="newsletter-form" novalidate>
+            <label for="newsletter-email" class="sr-only">Email address</label>
+            <div class="newsletter-input-group">
+              <input type="email" id="newsletter-email" placeholder="Enter your email" required />
+              <button type="submit" class="btn btn-cream btn-sm">Join</button>
+            </div>
+            <span class="newsletter-feedback" id="newsletter-feedback" role="status" aria-live="polite"></span>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2026</span> Wanderly Travel Pvt. Ltd. All rights reserved.</p>
+        <button type="button" class="back-to-top" id="back-to-top" aria-label="Back to top">
+          Back to top ↑
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Itinerary Modal -->
+  <div class="modal-backdrop" id="itinerary-modal" hidden role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close" id="modal-close" aria-label="Close itinerary modal">
+        &times;
+      </button>
+      <div class="modal-header">
+        <span class="modal-badge" id="modal-region">Region</span>
+        <h3 id="modal-title">Destination Itinerary</h3>
+        <p id="modal-subtitle">Curated Day-by-Day Guide</p>
+      </div>
+      <div class="modal-body">
+        <div class="modal-meta-grid">
+          <div class="modal-meta-box">
+            <span>Duration</span>
+            <strong id="modal-duration">—</strong>
+          </div>
+          <div class="modal-meta-box">
+            <span>Best Season</span>
+            <strong id="modal-season">—</strong>
+          </div>
+          <div class="modal-meta-box">
+            <span>Starting Price</span>
+            <strong id="modal-price">—</strong>
+          </div>
+        </div>
+        <h4>Day-by-Day Highlights</h4>
+        <ol class="itinerary-list" id="modal-itinerary-list"></ol>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" id="modal-dismiss-btn">Close</button>
+        <button type="button" class="btn btn-primary" id="modal-book-btn">Book This Destination</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Subtle Notification Toast -->
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

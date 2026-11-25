@@ -1,0 +1,15 @@
+
+# Environment variables - never upload API keys
+.env
+.env.*
+!.env.example
+
+# Dependencies & runtime data
+node_modules/
+data/store.json
+
+# Logs & OS artifacts
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
